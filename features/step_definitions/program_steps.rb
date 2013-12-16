@@ -56,7 +56,7 @@ end
 
 When /^I click the first program link$/ do
   within "#all-programs ul" do
-    find("li:first-child a").click()
+    first("li:first-child a").click
   end
 end
 

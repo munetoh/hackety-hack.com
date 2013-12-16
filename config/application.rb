@@ -29,3 +29,6 @@ module HacketyHackCom
     end
   end
 end
+
+# Rails 3.2
+I18n.enforce_available_locales = true

@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 
 ruby '1.9.3'
 
-gem 'rails', '3.1.11'
+gem 'rails', '3.2.16'
 gem 'json'
 
 gem 'hackety_hack-lessons', '~> 1.1', :require => 'hackety_hack/lessons'
@@ -20,8 +20,8 @@ gem "letter_opener", group: :development
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   "~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  gem 'sass-rails'
+  gem 'coffee-rails'
   gem 'uglifier'
 end
 
@@ -60,7 +60,13 @@ end
 group :test do
   gem "simplecov", :require => false
   gem "coveralls"
-  gem "mocha"
+  gem "mocha", :require => 'mocha/api'
   gem "database_cleaner"
   gem "launchy"
 end
+
+gem 'therubyracer', :platforms => :ruby
+gem 'brakeman'
+gem 'codesake-dawn'
+gem 'railroadmap', github: 'munetoh/railroadmap'
+
